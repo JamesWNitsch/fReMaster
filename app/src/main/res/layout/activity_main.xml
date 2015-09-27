@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="40dp"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+
+        android:id="@+id/playPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="SuperpoweredExample_PlayPause"
+        android:text="PLAY" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:text="STEMS"
+        android:id="@+id/stemsTextView"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MASTER"
+        android:layout_below="@+id/stemsTextView"
+        android:id="@+id/firstStemLabel"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstStemLabel"
+        android:id="@+id/firstStemSeekBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Vox"
+        android:layout_below="@+id/firstStemSeekBar"
+        android:id="@+id/secondStemLabel"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondStemLabel"
+        android:id="@+id/secondStemSeekBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harmony Vox"
+        android:layout_below="@+id/secondStemSeekBar"
+        android:id="@+id/thirdStemLabel"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdStemLabel"
+        android:id="@+id/thirdStemSeekBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pads"
+        android:layout_below="@+id/thirdStemSeekBar"
+        android:id="@+id/fourthStemLabel"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourthStemLabel"
+        android:id="@+id/fourthStemSeekBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pluck"
+        android:layout_below="@+id/fourthStemSeekBar"
+        android:id="@+id/fifthStemLabel"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fifthStemLabel"
+        android:id="@+id/fifthStemSeekBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commentary"
+        android:layout_below="@+id/fifthStemSeekBar"
+        android:id="@+id/sixthStemLabel"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sixthStemLabel"
+        android:id="@+id/sixthStemSeekBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alternate Mix"
+        android:layout_below="@+id/sixthStemSeekBar"
+        android:id="@+id/seventhStemLabel"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seventhStemLabel"
+        android:id="@+id/seventhStemSeekBar"/>
+
+
+
+</RelativeLayout>
